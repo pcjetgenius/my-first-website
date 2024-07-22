@@ -19,7 +19,7 @@ body {
     position: absolute;
     width: 400px;
     height: 400px;
-    background-image: url('/Users/pcjetgenius/Desktop/ChatGPT Code/Chips-Floating-Title.png'); 
+    background-image: url('Chips-Floating-Title.png'); 
     background-size: cover;
     background-position: center;
 }
