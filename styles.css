@@ -1,0 +1,40 @@
+body {
+    background-color: #ebebeb;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.image {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background-image: url('/Users/pcjetgenius/Desktop/ChatGPT Code/Chips-Floating-Title.png'); 
+    background-size: cover;
+    background-position: center;
+}
+
+.trail {
+    animation: moveX 2s cubic-bezier(.23,.65,.80,.45) forwards, moveY 2s cubic-bezier(.80,.45,.30,.10) forwards;
+}
+
+@keyframes moveX {
+    0% { opacity: 0%; left: -400px;}
+
+    100% { opacity: 100%; left: 500px;}
+}
+
+@keyframes moveY {
+    0% { opacity: 0%; top: -50px;}
+    100% { opacity: 100%; top: 380px;}
+}
